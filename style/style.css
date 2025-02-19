@@ -1,21 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .pomodoro{
     background-color: #BA4949;
 }
-.short-break{
-    background-color: #38858A;
-}
-.long-break{
-    background-color: #397097;
-}
+.glob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+.buttons button {
+    font-size: 13px;
+    width: 130px;
+    height: 30px;
+    margin: 10px;
+    color: white;
+    background-color: #2a2a38;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+  }
 
 .container{
     margin: 0 auto;
     max-width: 400px;
     text-align: center;
     padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-family: "Roboto", sans-serif;
     opacity: 0.7;
     border-radius: 10px;
+}
+#container{
+    background-color: #C15C5C;
+}
+#short-break{
+    background-color: #4C9196;
+}
+#long-break{
+    background-color: #4D7FA2;
 }
 
 .title{
@@ -27,28 +61,23 @@
 .timer{
     font-size:  72px;
     color: white;
+    margin: 0 !important;
 }
-button{
+#start{
 font-size: 18px;
-padding: 10px 20px;
+padding: 10px 30px;
 margin: 10px;
 color: white;
-/* background-color: #2c3e50; */
 background-color: #2a2a38;
 border: none;
 border-radius: 4px;
 cursor: pointer;
-text-transform: uppercase;
 transition: opacity .3s ease-in-out;
+background-color: #27ae60;
 }
-
 
 button:hover{
     opacity: .9;
-}
-
-#star{
-    background-color: #27ae60;
 }
 #star:active{
     border: 1px solid black;
@@ -56,5 +85,13 @@ button:hover{
 }
 
 #stop{
-    background-color: #c0392b;
+background-color: #c0392b;
+font-size: 18px;
+padding: 10px 30px;
+margin: 10px;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: opacity .3s ease-in-out;
 }

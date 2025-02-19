@@ -2,6 +2,12 @@ const starEl = document.getElementById("start")
 const stopEl = document.getElementById("stop") 
 const timerEl = document.getElementById("timer") 
 
+const pomodoro = document.getElementById('pomodoro')
+const shortBreak = document.getElementById('short')
+const longBreak = document.getElementById('long')
+const body = document.querySelector('body')
+const div = document.getElementById('container')
+
 starEl.addEventListener("click", startTimer)
 stopEl.addEventListener("click", stopTimer)
 
@@ -30,3 +36,20 @@ function startTimer(){
 function stopTimer(){
     clearInterval(interval); 
 }
+
+
+pomodoro.addEventListener('click',()=>{
+    body.style.backgroundColor="#BA4949"
+    div.style.backgroundColor="#C15C5C"
+    
+})
+shortBreak.addEventListener('click',()=>{
+    body.style.backgroundColor="#38858A"
+    div.style.backgroundColor="#4C9196"
+    body.style.transition="background-color 1s ease"
+    div.style.transition="background-color 1s ease" 
+})
+longBreak.addEventListener('click',()=>{
+    body.style.backgroundColor="#397097"
+    div.style.backgroundColor="#4D7FA2"
+})
