@@ -103,11 +103,11 @@ transition: opacity .3s ease-in-out;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  body {
+body {
     background-color: #BA4949;
     transition: background-color 0.5s ease;
   }
-  .container {
+.container {
     background-color: #C15C5C;
     width: min(90%, 500px);
     position: absolute;
@@ -117,63 +117,69 @@ transition: opacity .3s ease-in-out;
     padding: 4em 2em;
     border-radius: 0.5em;
   }
-  button {
+button {
     border: none;
     outline: none;
     cursor: pointer;
   }
-  .section-container {
+.section-container {
     display: flex;
     gap: 1em;
     justify-content: center;
   }
-  .btn {
+.btn {
     padding: 1em 2em;
     border-radius: 0.5em;
     background-color: #3e3f43;
     color: #a9a7a7;
   }
-  .btn-focus {
+.btn-focus {
     background-color: #cb202d;
     color: #ffffff;
   }
-  .time-btn-container {
+.time-btn-container {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
   }
-  #time {
+#time {
     text-align: center;
     color: #ffffff;
     font-size: 5em;
     font-weight: 600;
+
   }
-  .btn-container {
+.btn-container {
     display: flex;
     justify-content: center;
     gap: 2em;
   }
-  #btn-start,
-  #btn-pause {
-    padding: 1em 2em;
+#btn-start,
+#btn-pause {
+  margin-top: 20px;
+    color: #3e3f43;
+    padding: .7em 1em;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
     border-radius: 0.5em;
     cursor: pointer;
     background-color: #ffffff;
   }
-  #btn-reset {
+#btn-reset {
     background-color: transparent;
     border: none;
     outline: none;
     color: #ffffff;
     font-size: 2em;
+    margin-top: 20px;
   }
-  .hide {
+.hide {
     display: none;
   }
-  .show {
+.show {
     display: block;
   }
-  .modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -183,7 +189,7 @@ transition: opacity .3s ease-in-out;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  .modal-content {
+.modal-content {
     background-color: white;
     margin: 10% auto;
     padding: 20px;
@@ -191,25 +197,25 @@ transition: opacity .3s ease-in-out;
     width: 300px;
     text-align: center;
   }
-  .close {
+.close {
     float: right;
     cursor: pointer;
     font-size: 24px;
   }
-  .focus {
+.focus {
     color: white;
   }
-  .short-break {
-    background-color: #4C9196;
-    color: white;
-  }
-  
-  .long-break {
-    background-color: #4D7FA2;
+.short-break {
+    background-color: #38858A;
     color: white;
   }
   
-  .timer-btn {
+.long-break {
+    background-color: #397097;
+    color: white;
+  }
+  
+.timer-btn {
     padding: 10px 20px;
     font-size: 18px;
     border: none;
@@ -217,8 +223,7 @@ transition: opacity .3s ease-in-out;
     cursor: pointer;
     transition: background-color 0.3s;
   }
-  
-  .timer-btn:hover {
+.timer-btn:hover {
     opacity: 0.8;
   }
   
