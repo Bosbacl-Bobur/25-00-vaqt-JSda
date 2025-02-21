@@ -6,23 +6,40 @@
     <title>Pomodoro</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body class="pomodoro">
-    <div class="glob  red">
-            <div class="container" id="container">
-                <div class="buttons">
-                    <button id="pomodoro">Pomodoro</button>
-                    <button id="short">Short Breac</button>
-                    <button id="long">Long Breac</button>
-                </div>
-                <h1 class="title">Pomodoro Timer</h1>
-                <p class="timer" id="timer">25:00</p>
-                <div class="button-wrapper">
-                    <button id="start">Start</button>
-                    <button id="stop">Stop</button>
-                </div>
-            </div>
+<body>
+  <div id="report-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-report">&times;</span>
+        <h2>Report</h2>
+        <p>This is the report content.</p>
     </div>
-    
-    <script src="./js/script.js"></script>
+</div>
+
+<div id="settings-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-settings">&times;</span>
+        <h2>Settings</h2>
+        <p>Adjust your preferences here.</p>
+    </div>
+</div>
+
+  <div class="container">
+    <div class="section-container">
+      <button id="focus" class="btn btn-timer btn-focus">Focus</button>
+      <button id="shortbreak" class="btn btn-shortbreak">Short Break</button>
+      <button id="longbreak" class="btn btn-longbreak">Long Break</button>
+    </div>
+    <div class="time-btn-container">
+      <span id="time"></span>
+      <div class="btn-container">
+        <button id="btn-start" class="show">Start</button>
+        <button id="btn-pause" class="hide">Pause</button>
+        <button id="btn-reset" class="hide">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+      <script src="./js/script.js"></script>
 </body>
 </html>
