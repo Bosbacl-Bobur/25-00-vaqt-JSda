@@ -8,21 +8,98 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-  <div id="report-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="close-report">&times;</span>
-        <h2>Report</h2>
-        <p>This is the report content.</p>
-    </div>
-</div>
 
-<div id="settings-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="close-settings">&times;</span>
-        <h2>Settings</h2>
-        <p>Adjust your preferences here.</p>
+<nav class="navbar">
+  <div class="navbar-container">
+    <div>
+      <button class="btn-nav"><a href="./index.html" class="a"><img class="img" src="./img/image.png" alt="Error">Pomofocus</a></button>
     </div>
-</div>
+    <div class="buttons">
+      <button class="btn_1 show-modal" id="myBtn"><img src="./img/image copy.png" width="15px" alt="Error">Report</button>
+      <button class="btn_1" id="myBtn2"><img src="./img/image copy 2.png" width="15px" alt="Error">Setting</button>
+      <button class="btn_1" id="myBtn3"><img src="./img/image copy 3.png" width="15px" alt="Error">Sign In</button>
+    </div>
+  </div>
+</nav>
+<div class="modal hidden" id="modal">
+  <button class="close-modal" id="close">&times;</button>
+  <h1 class="sumary">Setting</h1>
+   <hr class="hr"> 
+  <p class="p">
+    <img src="./img/image copy 4.png" alt="Error" width="22">
+    TIMER 
+  </p>
+  <p class="minutes">
+    Time (minutes)
+  </p>
+  <div class="time-settings">
+    <div>
+      <label for="pomodoro">Pomodoro</label>
+    <input type="number" value="25" placeholder="Pomodoro">
+    </div>
+    <div>
+      <label for="short">Short Break</label>
+    <input type="number" value="5" placeholder="Short Break">
+    </div>
+    <div>
+      <label for="Long Break">Long Break</label>
+    <input type="number" value="15" placeholder="Long Break">
+    </div>
+  </div>
+  <div class="option">
+    <span>Auto Start Breaks</span>
+    <div class="toggle" onclick="this.classList.toggle('active')"></div>
+  </div>
+  <div class="option">
+    <span>Auto Start Pomodoros</span>
+    <div class="toggle" onclick="this.classList.toggle('active')"></div>
+  </div>
+  <div class="label">
+    <label for="">Long Break interval</label>
+    <input type="number" value="4">
+  </div>
+  <hr class="hr2">
+
+  <div class="div-task">
+    <img src="./img/task.png" alt="Error" width="25">
+    <p class="task">TASK</p>
+  </div>
+
+  <div class="div-option">
+    <div class="option">
+      <div class="span-img">
+        <span>Auto Check Tasks</span>
+      <img src="./img/izoh.png" alt="Error" width="32">
+      </div>
+      <div class="toggle" onclick="this.classList.toggle('active')"></div>
+    </div>
+    <div class="option">
+      <div class="span-img">
+        <span>Auto Switch Tasks</span>
+      <img src="./img/izoh.png" alt="Error" width="32">
+      </div>
+      
+      <div class="toggle" onclick="this.classList.toggle('active')"></div>
+    </div>
+
+    <div class="color">
+      <p>Color Themes</p>
+      <div class="div_color">
+          <div class="sized green" id="green"></div>
+          <div class="sized red" id="red"></div>
+          <div class="sized blue" id="blue"></div>
+          <div class="sized dark" id="dark"></div>
+      </div>
+  </div>
+  <div class="ok">
+      <button class="overlay2" id="overlay2">OK</button>
+  </div>
+
+  </div>
+  </div>
+
+
+<div class="overlay hidden"></div>
 
   <div class="container">
     <div class="section-container">
