@@ -15,9 +15,9 @@
       <button class="btn-nav"><a href="./index.html" class="a"><img class="img" src="./img/image.png" alt="Error">Pomofocus</a></button>
     </div>
     <div class="buttons">
-      <button class="btn_1 show-modal" id="myBtn"><img src="./img/image copy.png" width="15px" alt="Error">Report</button>
-      <button class="btn_1" id="myBtn2"><img src="./img/image copy 2.png" width="15px" alt="Error">Setting</button>
-      <button class="btn_1" id="myBtn3"><img src="./img/image copy 3.png" width="15px" alt="Error">Sign In</button>
+      <button class="btn_1 show-modal" id="myBtn"><img src="./img/image copy.png" width="15px" alt="Error"><p class="none">Report</p></button>
+      <button class="btn_1" id="myBtn2"><img src="./img/image copy 2.png" width="15px" alt="Error"><p class="none">Setting</p></button>
+      <button class="btn_1" id="myBtn3"><img src="./img/image copy 3.png" width="15px" alt="Error"><p class="none">Sign In</p></button>
     </div>
   </div>
 </nav>
@@ -35,15 +35,15 @@
   <div class="time-settings">
     <div>
       <label for="pomodoro">Pomodoro</label>
-    <input type="number" value="25" placeholder="Pomodoro">
+    <input id="input-timer" type="number" value="25" placeholder="Pomodoro">
     </div>
     <div>
       <label for="short">Short Break</label>
-    <input type="number" value="5" placeholder="Short Break">
+    <input id="input-timer2" type="number" value="5" placeholder="Short Break">
     </div>
     <div>
       <label for="Long Break">Long Break</label>
-    <input type="number" value="15" placeholder="Long Break">
+    <input id="input-timer3" type="number" value="15" placeholder="Long Break">
     </div>
   </div>
   <div class="option">
@@ -76,16 +76,17 @@
     <div class="option">
       <div class="span-img">
         <span>Auto Switch Tasks</span>
-      <img src="./img/izoh.png" alt="Error" width="32">
+      <img src="./img/izoh.png" alt="Error" width="32"> 
       </div>
       
       <div class="toggle" onclick="this.classList.toggle('active')"></div>
     </div>
 
+
     <div class="color">
       <p>Color Themes</p>
       <div class="div_color">
-          <div class="sized green" id="green"></div>
+          <div class="sized green" id="green"></div> 
           <div class="sized red" id="red"></div>
           <div class="sized blue" id="blue"></div>
           <div class="sized dark" id="dark"></div>

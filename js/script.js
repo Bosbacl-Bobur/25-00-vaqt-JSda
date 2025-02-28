@@ -16,6 +16,9 @@ let dark = document.getElementById("dark");
 let blue = document.getElementById("blue");
 let body = document.querySelector("body");
 let overlay2 = document.getElementById("overlay2");
+// let input_timer = document.getElementById("input-timer");
+// let input_timer2 = document.getElementById("input-timer2");
+// let input_timer3 = document.getElementById("input-timer3");
 let set;
 let active = "focus";
 let count = 59;
@@ -57,7 +60,7 @@ document.addEventListener('keydown', function (event) {
 });
 
 
-// vaqt
+// vaqt 
 
 const appendZero = (value) => {
   return value < 10 ? `0${value}` : value;
@@ -68,7 +71,7 @@ const changeBackgroundColor = (colorClass) => {
   document.body.classList.add(colorClass);
 };
 
-changeBackgroundColor('focus');
+changeBackgroundColor('focwus');
 
 reset.addEventListener("click", () => {
   pauseTimer();
@@ -101,8 +104,8 @@ focusButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${minCount + 1}:00`;
   active = "focus";
-  // changeBackgroundColor('focus');
   body.style.backgroundColor="#B94949"
+
 
   container.style.backgroundColor="#C15C5C";
   focusButton.style.backgroundColor="#A44E4E"
@@ -116,6 +119,7 @@ focusButton.addEventListener("click", () => {
 shortBreakButton.addEventListener("click", () => {
   active = "short";
   removeFocus();
+   
   shortBreakButton.classList.add("btn-focus");
   pauseTimer();
   minCount = 4;
@@ -123,16 +127,16 @@ shortBreakButton.addEventListener("click", () => {
   time.textContent = `${appendZero(minCount + 1)}:00`;
   body.style.backgroundColor="#38858A"
   container.style.backgroundColor="#4C9196";
-  focusButton.style.background="none"
-  shortBreakButton.style.backgroundColor="#417B80"
-  longBreakButton.style.background="none"
-  myBtn.style.backgroundColor="#4C9196"
-  myBtn2.style.backgroundColor="#4C9196"
-  myBtn3.style.backgroundColor="#4C9196"
+  focusButton.style.background="none";
+  shortBreakButton.style.backgroundColor="#417B80";
+  longBreakButton.style.background="none";
+  myBtn.style.backgroundColor="#4C9196";
+  myBtn2.style.backgroundColor="#4C9196";
+  myBtn3.style.backgroundColor="#4C9196";
 });
 
 
-longBreakButton.addEventListener("click", () => { 
+longBreakButton.addEventListener("click", () => {
   active = "long";
   removeFocus();
   longBreakButton.classList.add("btn-focus");
@@ -142,12 +146,12 @@ longBreakButton.addEventListener("click", () => {
   time.textContent = `${minCount + 1}:00`;
   body.style.backgroundColor="#397097"
   container.style.backgroundColor="#4D7FA2";
-  shortBreakButton.style.background="none"
-  focusButton.style.background="none"
-  longBreakButton.style.backgroundColor="#426C8A"
-  myBtn.style.backgroundColor="#4D7FA2"
-  myBtn2.style.backgroundColor="#4D7FA2"
-  myBtn3.style.backgroundColor="#4D7FA2"
+  shortBreakButton.style.background="none";
+  focusButton.style.background="none";
+  longBreakButton.style.backgroundColor="#426C8A";
+  myBtn.style.backgroundColor="#4D7FA2";
+  myBtn2.style.backgroundColor="#4D7FA2";
+  myBtn3.style.backgroundColor="#4D7FA2";
 });
 // body rangi
 
@@ -229,6 +233,10 @@ startBtn.addEventListener("click", () => {
     }, 1000);
   }
 });
+
+// input-Timer
+
+
 
 document.getElementById('report-btn').addEventListener('click', function () {
     document.getElementById('report-modal').style.display = 'block';
