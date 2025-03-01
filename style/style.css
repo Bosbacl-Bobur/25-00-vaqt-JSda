@@ -538,7 +538,7 @@ a{
   }
 }
 
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 992px) {
   .navbar-container{
     width: 405px;
     height: 55px;
