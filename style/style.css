@@ -7,8 +7,14 @@
 body {
     background-color: #BA4949;
     transition: background-color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
   }
   .navbar{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +32,9 @@ body {
 .hrr{
   display: none;
 }
+
+
+
 .a{
   text-decoration: none;
   color: white;
@@ -63,13 +72,20 @@ body {
     justify-content: center;
     gap: 9px;
 }
+.ota-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
 .container {
     background-color: #C15C5C;
-    width: min(90%, 500px);
-    position: relative;
+    width: 500px;
+    /* position: relative; */
     /* transform: translate(-50%, -50%); */
-    top: 100px;
-    left: 31.5%;
+    /* top: 100px;
+    left: 31.5%; */
     padding: 3em 2em;
     border-radius: 0.5em;
   }
@@ -185,6 +201,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
   }
+  
 .timer-btn:hover {
     opacity: 0.8;
   }
@@ -400,7 +417,6 @@ button {
 }
 .div-task img{
   color: rgb(170, 170, 170);
-  -webkit-tap-highlight-color: transparent;
   position: relative;
   top: -2px;
 }
@@ -434,7 +450,6 @@ button {
   top: 3px;
 }
 .color p {
-  /* font-weight: bold; */
   font-weight: bold;
   font-size: 18px;
   color: #555555;
@@ -500,8 +515,17 @@ a{
   text-decoration: none;
   color: #fff;
 }
+.none{
+  display: flex;
+}
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (mi-width: 1200px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .navbar .navbar-container{
     border: none;
     box-shadow: 0px 0px 0px black;
@@ -509,7 +533,7 @@ a{
    .container{
     position: relative;
     top: 100px;
-    left: 72.5%; 
+    left: -30px; 
   } 
   .modal {
     position: absolute;
@@ -536,6 +560,9 @@ a{
     backdrop-filter: blur(3px);
     z-index: 5;
   }
+  .none{
+    display: inline-block;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -547,10 +574,10 @@ a{
     align-items: center;
     border: none;
   }
-  .none{
+   .none{
     display: none;
   }
-  .btn_1{
+  /*.btn_1{
     background-color: #C66969;
     width: 40px;
     height: 33px;
@@ -561,11 +588,11 @@ a{
     justify-content: center;
     gap: 4px;
     cursor: pointer;
-  }
+  } */
   .container{
     position: relative;
     top: 100px;
-    left: 5%; 
+    left: -50px; 
   } 
 
   .close-modal {
@@ -648,8 +675,6 @@ a{
 
   .time-settings {
     display: flex;
-    /* grid-template-columns: repeat(3, 0.5fr); */
-    /* gap: 5px; */
     margin-bottom: 20px;
     position: relative;
     left: -85px;
@@ -689,4 +714,10 @@ a{
     color: #555555;
   }
   
+}
+
+@media only screen and (max-width: 768px){
+ .none{
+  display: none;
+ }
 }
